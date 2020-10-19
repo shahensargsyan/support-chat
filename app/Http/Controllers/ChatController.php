@@ -25,5 +25,6 @@ class ChatController extends Controller
         if (Auth::user()!== null){
             return redirect('/home');
         }
+        return view('welcome');
     }
 }
