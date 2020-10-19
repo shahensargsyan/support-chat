@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+
+Auth::routes(['register' => false]);
+
+Route::get('/', 'ChatController@welcome')->name('welcome');
+Route::get('/home', 'ChatController@index')->name('home');
+Route::post('/save-client', 'HomeController@saveClient')->name('save-client');
