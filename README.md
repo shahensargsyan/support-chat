@@ -6,6 +6,24 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
+# Laravel Quickstart - Basic
+
+## Quick Installation
+
+    git clone https://github.com/shahensargsyan/support-chat.git
+
+    cd support-chat
+
+    composer install
+
+    php artisan migrate --seed
+
+    nohup php artisan websocket:init > websocket.log &
+
+    php artisan serve
+
+[Complete Tutorial](https://laravel.com/docs/5.2/quickstart)
+
 
 ## About Laravel
 
