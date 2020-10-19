@@ -21,7 +21,7 @@ $session = mt_rand(1,999);
 
 <div id="wrapper">
     <div id="chat_output"></div>
-    <textarea id="chat_input" placeholder="Deine Nachricht..."></textarea>
+    <textarea id="chat_input" placeholder="Your message..."></textarea>
     <script type="text/javascript">
         let user = '{{json_encode(Auth::user()->toArray())}}'
         jQuery(function($){
